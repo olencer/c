@@ -1,0 +1,13 @@
+# CLion configurations.
+/.idea
+
+# Writerside configurations.
+/docs/.idea
+
+# Files created by cmake, compilers and generators.
+/**/build*
+/**/debug*
+/**/release*
+
+# File used to compile easily.
+/code/CMakeLists.txt

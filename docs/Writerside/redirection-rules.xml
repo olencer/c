@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="3d69e1f6">
+        <description>Created after removal of "About Header" from Header</description>
+        <accepts>starter-topic.html</accepts>
+    </rule>
+    <rule id="31bb5391">
+        <description>Created after removal of "Header" from Header</description>
+        <accepts>Header.html</accepts>
+    </rule>
+    <rule id="8e94f6e">
+        <description>Created after removal of "Header" from Header</description>
+        <accepts>Header.html</accepts>
+    </rule>
+    <rule id="19d41668">
+        <description>Created after removal of "Overview" from Header</description>
+        <accepts>Overview.html</accepts>
+    </rule>
+    <rule id="72c3dfa8">
+        <description>Created after removal of "assert.h" from Header</description>
+        <accepts>assert-h.html</accepts>
+    </rule>
+    <rule id="39ef1089">
+        <description>Created after removal of "table" from Header</description>
+        <accepts>table.html</accepts>
+    </rule>
+</rules>
