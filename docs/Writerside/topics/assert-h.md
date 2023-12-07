@@ -21,11 +21,11 @@ assert(expersion)
 #### code {id="assert-code"}
 
 ```C
-assert(("Not define NDEBUG macro.", 0));
-printf("Define NDEBUG macro.\n");
+    assert(("Not define NDEBUG macro.", 0));
+    printf("Define NDEBUG macro.\n");
 ```
 
-#### output {id="assert-output"}
+#### run {id="assert-run"}
 
 ```Shell
 cmake -D CMAKE_BUILD_TYPE="Debug" -B ./debug
@@ -57,16 +57,21 @@ static_assert(expresion, message)
 main.c
 ```C
 // static_assert(sizeof(void *) == 8);
-static_assert(sizeof(void *) == 8, "64-bit platform is not supported.");
-printf("64-bit architecture platform is supported.\n");
+    static_assert(sizeof(void *) == 8, "64-bit platform is not supported.");
+    printf("64-bit architecture platform is supported.\n");
 ```
+
 CMakeLists.txt
+
+> add_compile_options(-m32)
+{style="warning"}
+
 ```CMake
 if (32_DEBUG AND "${CMAKE_C_COMPILER_ID}" MATCHES "GNU")
     add_compile_options(-m32)
 endif ()
 ```
-#### output {id="static-assert-output"}
+#### run {id="static-assert-run"}
 
 ```shell
 cmake -D 32_DEBUG="on" -B ./build-x86
